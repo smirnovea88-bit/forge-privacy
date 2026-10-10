@@ -1,8 +1,8 @@
 # Forge — Privacy Policy
 
-**Version:** 1.0  
-**Effective date:** 8 October 2026  
-**Contact:** foreg.app.support26@gmail.com  
+**Version:** 1.1<br>
+**Effective date:** 10 October 2026<br>
+**Contact:** foreg.app.support26@gmail.com<br>
 **Other languages:** [Русская версия](ru.html)
 
 Forge ("Forge", "we", "us") is an Android app for logging strength workouts. This policy explains what
@@ -17,6 +17,8 @@ data Forge handles, why, who receives it, how long it is kept, and what choices 
   Your name, email and user ID are not sent to Anthropic.
 - We **do not sell** your data, we **do not show ads**, and we **do not use analytics or tracking SDKs**.
 - You can delete your account in the app at any time.
+- A training profile (sex, birth date, experience, goal) is **optional**, is stored **on your device** and, if you
+  fill it in, is used only to tailor the AI analysis.
 
 ## 2. Data that stays on your device
 
@@ -24,9 +26,16 @@ Forge works offline. The following is stored only in the app's private storage o
 
 - workouts, sets, exercises (including exercises you create), templates, history and progress figures;
 - your weight-unit setting and interface language;
+- your optional training profile (see below);
 - saved AI analyses (up to the 100 most recent; older ones are deleted automatically).
 
 We do not have access to this data. It is removed when you uninstall the app or clear its data.
+
+**Your training profile (optional).** In the AI section the app can ask for a few details: sex, date of birth,
+training experience and main goal. Every field is optional and you can skip, change or clear them at any time.
+The profile is stored only on your device. It is used for one purpose: to tailor the AI analysis (section 4). We
+do not sell it, we do not use it for advertising and we do not keep it on our server. The date of birth stays on
+your device; only your age in years is sent, and only with an AI request.
 
 **Android backup and transfer.** Forge's database is excluded from Android cloud backup (Google Drive).
 When you move to a new phone with Android's direct device-to-device transfer (Android 12 and later),
@@ -54,10 +63,12 @@ before the first request). You can withdraw consent at any time on the AI screen
 - summary figures for the period you choose (4, 8 or 12 weeks): number of workouts, frequency, total volume,
   volume by muscle-group category, top exercises by volume, personal records and progress signals;
 - exercise names, including exercises you have named yourself;
+- if you have filled in your training profile: your sex, your age (calculated on your device from the date of
+  birth), your training experience and your goal; only the fields you filled in are sent;
 - for the detailed analysis only: individual sets from the last 4 weeks (weight, repetitions and whether a set
   is a warm-up), together with the week of the period and the day of the week.
 
-**What is not sent:** your name, your email address, your user ID, exact timestamps of sets, or any data
+**What is not sent:** your name, your email address, your user ID, your date of birth, exact timestamps of sets, or any data
 outside the chosen period. Please do not put personal information into names of custom exercises: those names
 are sent as part of the analysis.
 
@@ -109,6 +120,7 @@ Withdrawing consent does not affect the lawfulness of processing carried out bef
 | Data | Where | Retention |
 |---|---|---|
 | Workouts, history, exercises, templates, settings | Your device | Until you delete them or uninstall the app |
+| Training profile (sex, date of birth, experience, goal) | Your device | Until you change or clear it, delete the app data or uninstall the app |
 | Saved AI analyses | Your device | The 100 most recent; older ones are deleted automatically; you can delete any analysis yourself |
 | Account data (email, identifier, profile details from Google) | Our server | Until you delete your account |
 | Consent record | Our server | Until you delete your account. Withdrawing consent marks the record as withdrawn (with the time); it does not delete the record |
@@ -140,8 +152,8 @@ is completely secure, and we cannot guarantee absolute security.
 
 ## 11. Children
 
-Forge is not directed to children. Do not use the account and AI features if you are under 13 (or under 16 in
-the European Economic Area or where local law sets a higher age). If you believe a child has provided us
+Forge is not directed to children. Do not use the account and AI features if you are under 16. The date-of-birth
+field in the profile does not accept dates that make a person younger than 16. If you believe a child has provided us
 personal data, contact us and we will delete it.
 
 ## 12. Changes to this policy
@@ -153,3 +165,10 @@ app asks for your consent again before the next AI request.
 ## 13. Contact
 
 foreg.app.support26@gmail.com
+
+## 14. Version history
+
+| Version | Date | Changes |
+|---|---|---|
+| 1.1 | 10 October 2026 | Added the optional training profile (sex, date of birth, experience, goal): stored on the device, age and the other fields sent with AI requests; the minimum age is now 16 everywhere (previously 13, or 16 in the EEA) |
+| 1.0 | 8 October 2026 | First version |
