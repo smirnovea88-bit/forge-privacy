@@ -1,7 +1,7 @@
 # Forge — Privacy Policy
 
-**Version:** 1.1<br>
-**Effective date:** 10 October 2026<br>
+**Version:** 1.2<br>
+**Effective date:** 17 October 2026<br>
 **Contact:** foreg.app.support26@gmail.com<br>
 **Other languages:** [Русская версия](ru.html)
 
@@ -12,9 +12,9 @@ data Forge handles, why, who receives it, how long it is kept, and what choices 
 
 - Your workouts, history, exercises, templates and settings stay **on your device**. We do not receive them.
 - An account is **optional**. You need one only for the AI analysis feature (and, in the future, a paid plan).
-- The AI analysis is **optional** and works only after you sign in and give a separate consent. When you
-  run it, summary figures of your workouts are sent to our server and on to the AI provider, Anthropic.
-  Your name, email and user ID are not sent to Anthropic.
+- The AI features (analysis and plan generation) are **optional** and work only after you sign in and give a
+  separate consent. When you run one, summary figures of your workouts are sent to our server and on to the AI
+  provider, Anthropic. Your name, email and user ID are not sent to Anthropic.
 - We **do not sell** your data, we **do not show ads**, and we **do not use analytics or tracking SDKs**.
 - You can delete your account in the app at any time.
 - A training profile (sex, birth date, experience, goal) is **optional**, is stored **on your device** and, if you
@@ -27,7 +27,8 @@ Forge works offline. The following is stored only in the app's private storage o
 - workouts, sets, exercises (including exercises you create), templates, history and progress figures;
 - your weight-unit setting and interface language;
 - your optional training profile (see below);
-- saved AI analyses (up to the 100 most recent; older ones are deleted automatically).
+- saved AI analyses (up to the 100 most recent; older ones are deleted automatically);
+- your answers to the AI Plan survey and the last generated plan until you save or discard it (see section 4).
 
 We do not have access to this data. It is removed when you uninstall the app or clear its data.
 
@@ -53,9 +54,9 @@ If you choose to sign in, you use **Sign in with Google**. We receive from Googl
 We use this to create and secure your account, to recognise you on later sign-ins and to apply AI usage
 limits. Your sign-in session is kept on your device and is excluded from backup.
 
-## 4. AI analysis (optional)
+## 4. AI features: analysis and plan generation (optional)
 
-The AI analysis needs an account, an internet connection and your **separate consent** (shown in the app
+The AI features need an account, an internet connection and your **separate consent** (shown in the app
 before the first request). You can withdraw consent at any time on the AI screen.
 
 **What is sent when you request an analysis**
@@ -68,6 +69,24 @@ before the first request). You can withdraw consent at any time on the AI screen
 - for the detailed analysis only: individual sets from the last 4 weeks (weight, repetitions and whether a set
   is a warm-up), together with the week of the period and the day of the week.
 
+**AI Plan generation.** When you use the AI Plan Generation feature, the following data is sent to Anthropic
+(through our server): your survey responses (days per week, workout duration, where you train and the split
+type you choose), your goal and experience, and summary metrics of your workout history for the last 8 weeks
+(how often you did each exercise, the days of the week you trained and which muscle groups you covered; no
+weights, no individual sets and no exact timestamps). If you have filled in your training profile, your sex and
+your age (calculated on your device from the date of birth) are sent as well; only the fields you filled in are
+sent. Your goal and experience are taken from the survey if you changed them there, otherwise from your profile.
+The names of the exercises available for the plan, including your own exercises that appear in your last 8 weeks
+of history, are also sent. If you have no workout history, the plan is built without it.
+
+The plan generation needs the consent version that covers it (version 2 of the consent); if you gave the earlier
+consent, the app asks you to update it before you generate a plan, and the analysis keeps working. Your survey
+answers are saved only on your device; they are not sent anywhere except with a plan request, are not added to
+your profile or export file, and stay on the device when you sign out or delete your account. The last generated
+plan is kept on your device until you save it as templates or discard it, and is also removed when you sign out
+or delete your account. Templates are created only after you confirm the plan. AI-generated plans are
+informational and are not medical advice.
+
 **What is not sent:** your name, your email address, your user ID, your date of birth, exact timestamps of sets, or any data
 outside the chosen period. Please do not put personal information into names of custom exercises: those names
 are sent as part of the analysis.
@@ -78,7 +97,7 @@ generates the analysis. The result comes back through our server to your app.
 
 **What we store about it.** We do **not** store the content of your requests or of the answers on our server.
 We store only technical metadata about each request, linked to your account, in order to apply usage limits and
-keep the service working: the time of the request, its type (short or detailed), the model name, token
+keep the service working: the time of the request, its type (short analysis, detailed analysis or plan generation), the model name, token
 counts, and the result status or error code. We also store your consent record: the consent version and text
 you accepted, the time you accepted it and, if applicable, the time you withdrew it. The analysis itself
 is saved only on your device.
@@ -110,7 +129,7 @@ contractual clauses.
 | Purpose | Legal basis |
 |---|---|
 | Creating and operating your account | Performance of the service you request (Art. 6(1)(b)) |
-| Sending your data to the AI provider for an analysis | Your consent (Art. 6(1)(a)), which you can withdraw at any time |
+| Sending your data to the AI provider for an analysis or a plan | Your consent (Art. 6(1)(a)), which you can withdraw at any time |
 | Recording your consent, applying usage limits, preventing abuse and keeping the service secure | Our legitimate interests (Art. 6(1)(f)) and, for the consent record, our legal obligation to demonstrate consent |
 
 Withdrawing consent does not affect the lawfulness of processing carried out before the withdrawal.
@@ -122,9 +141,11 @@ Withdrawing consent does not affect the lawfulness of processing carried out bef
 | Workouts, history, exercises, templates, settings | Your device | Until you delete them or uninstall the app |
 | Training profile (sex, date of birth, experience, goal) | Your device | Until you change or clear it, delete the app data or uninstall the app |
 | Saved AI analyses | Your device | The 100 most recent; older ones are deleted automatically; you can delete any analysis yourself |
+| AI Plan survey answers | Your device | Until you change them, delete the app data or uninstall the app; they stay when you sign out or delete your account |
+| Last generated AI plan (not yet saved) | Your device | Until you save or discard it, sign out or delete your account |
 | Account data (email, identifier, profile details from Google) | Our server | Until you delete your account |
 | Consent record | Our server | Until you delete your account. Withdrawing consent marks the record as withdrawn (with the time); it does not delete the record |
-| AI request metadata (time, type, model, token counts, status) | Our server | Until you delete your account |
+| AI request metadata (time, type, model, token counts, status; includes plan-generation requests) | Our server | Until you delete your account |
 | Content of AI requests and answers | Not stored by us | Not applicable (Anthropic's own retention is governed by its terms) |
 
 ## 9. Your rights and choices
@@ -170,5 +191,6 @@ foreg.app.support26@gmail.com
 
 | Version | Date | Changes |
 |---|---|---|
+| 1.2 | 17 October 2026 | Described AI Plan generation: the survey answers (days per week, duration, location, split type), goal, experience, sex, age and an 8-week summary of workout history are sent to Anthropic; on-device storage of survey answers and the last generated plan; consent version 2 for plan generation |
 | 1.1 | 10 October 2026 | Added the optional training profile (sex, date of birth, experience, goal): stored on the device, age and the other fields sent with AI requests; the minimum age is now 16 everywhere (previously 13, or 16 in the EEA) |
 | 1.0 | 8 October 2026 | First version |
